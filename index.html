@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе-кондитерская</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="name">Sweet cake</div>
+            <div class="name_mikro">Кафе-кондитерская</div>
+        </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+    </header>
+
+    <main id="content">
+        <nav id="main-menu" class="hidden">
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Главная</a></li>
+                <li><a href="#" onclick="showPage('catalog')">Каталог</a></li>
+                <li><a href="#" onclick="showPage('register')">Регистрация</a></li>
+                <li><a href="#" onclick="showPage('order')">Торты на заказ</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="page">
+            <h1>Добро пожаловать в наше кафе!</h1>
+            <p>Здесь вы найдёте последние новости и акции.</p>
+            <div id="news">
+                <h2>Новости</h2>
+                <ul>
+                    <li>Новый торт месяца - Тирамису!</li>
+                    <li>Скидка 10% на все заказы в выходные!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="catalog" class="page hidden">
+            <h1>Каталог тортов</h1>
+            <ul>
+                <li>Торт Наполеон - 1200 руб.</li>
+                <li>Торт Наполеон - 1500 руб.</li>
+                <li>Торт Прага - 1800 руб.</li>
+            </ul>
+        </div>
+
+        <div id="register" class="page hidden">
+            <h1>Регистрация</h1>
+            <form>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+
+        <div id="order" class="page hidden">
+            <h1>Торты на заказ</h1>
+            <form>
+                <label for="cake-type">Тип торта:</label>
+                <input type="text" id="cake-type" name="cake-type" required>
+                <label for="cake-details">Детали:</label>
+                <textarea id="cake-details" name="cake-details" required></textarea>
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 390px; /* Устанавливает ширину экрана */
+    height: 844px; /* Устанавливает высоту экрана */
+    overflow-y: auto; /* Добавляет вертикальную прокрутку */
+    font-family: Arial, sans-serif;
+    background-color: #FEF0F2;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #c0c5c0; /* Зеленый цвет хедера */
+    color: rgb(35, 11, 11);
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Для абсолютного позиционирования меню */
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+}
+
+.page {
+    padding: 20px;
+}
+
+.hidden {
+    display: none; /* Скрывает элементы с этим классом */
+}
+
+/* Дополнительные стили для страниц */
+#catalog, #register, #order {
+    margin-top: 20px;
+}
+
+/* image 69 */
+.images{
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    left: 15px;
+    top: 41px;
+
+    background: url(1.png);
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.name{
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #693828;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    background-color: #aa5f69;
+}
