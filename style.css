@@ -329,3 +329,130 @@ p.price-second {
 .modal-content button:hover {
     background-color: #8b4d35;
 }
+
+
+/* Отзывы */
+
+.main_review {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 10%;
+    padding-right: 20px;
+    height: 350px;
+}
+
+.main_review h1 {
+    font-size: 24px;
+    color: #a65a3e;
+    margin-bottom: 20px;
+}
+
+.review_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.review_form label {
+    font-size: 14px;
+    color: #a65a3e;
+    font-weight: bold;
+    text-align: left;
+}
+
+.review_form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f7c8b3;
+    border-radius: 16px;
+    outline: none;
+    font-size: 14px;
+    color: #a65a3e;
+    resize: none;
+    transition: border-color 0.3s;
+    margin-top: 15px;
+}
+
+.review_form textarea:focus {
+    border-color: #a65a3e;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f7c8b3;
+    transition: color 0.3s;
+}
+
+.star.active {
+    color: #ffd700;
+}
+
+.review_form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #a65a3e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review_form button:hover {
+    background-color: #8b4d35;
+}
+
+.reviews_list {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review_item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review_item h3 {
+    margin: 0;
+    color: #a65a3e;
+}
+
+.review_item .review_date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.review_item .review_text {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.review_item .review_stars {
+    display: flex;
+    gap: 5px;
+}
