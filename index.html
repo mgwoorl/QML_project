@@ -100,14 +100,31 @@
         </div>
 
         <div id="order" class="page hidden">
-            <h1>Торты на заказ</h1>
-            <form>
-                <label for="cake-type">Тип торта:</label>
-                <input type="text" id="cake-type" name="cake-type" required>
-                <label for="cake-details">Детали:</label>
-                <textarea id="cake-details" name="cake-details" required></textarea>
-                <button type="submit">Заказать</button>
-            </form>
+            
+            <div class="main_review">
+                <h1>Оставить отзыв</h1>
+                <form class="review_form" id="reviewForm">
+                    <label>
+                        Текст отзыва
+                        <textarea id="reviewText" rows="4" placeholder="Поделитесь своими впечатлениями" required></textarea>
+                    </label>
+                    <div>
+                        <label>Оценка</label>
+                        <div class="stars" id="starRating">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+
+            <div class="reviews_list" id="reviewsList">
+                <!-- Здесь будут появляться отзывы -->
+            </div>
         </div>
 
         <div id="catalog" class="page hidden">
