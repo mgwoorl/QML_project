@@ -188,3 +188,97 @@ p.price-second {
     display: flex;
     margin-bottom: -8px;
 }
+
+
+/* Регистрация */
+.main_registr {
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.main_registr h1 {
+    font-size: 24px;
+    color: #a65a3e;
+    margin-bottom: 20px;
+}
+
+.registr {
+    width: 100%;
+    padding-left: 10%;
+}
+
+.reristr_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.reristr_form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    color: #a65a3e;
+    font-weight: bold;
+}
+
+.reristr_form input[type="text"],
+.reristr_form input[type="email"],
+.reristr_form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f7c8b3;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    color: #a65a3e;
+    transition: border-color 0.3s;
+}
+
+.reristr_form input[type="text"]:focus,
+.reristr_form input[type="email"]:focus,
+.reristr_form input[type="password"]:focus {
+    border-color: #a65a3e;
+}
+
+.reristr_form input::placeholder {
+    color: #f7c8b3;
+}
+
+.reristr_form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #a65a3e;
+}
+
+.reristr_form .checkbox input {
+    width: auto;
+    margin: 0;
+}
+
+.reristr_form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #a65a3e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reristr_form button:hover {
+    background-color: #8b4d35;
+}
+
