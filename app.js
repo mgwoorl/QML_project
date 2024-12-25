@@ -10,7 +10,6 @@ function showPage(page) {
 }
 
 //Регистрация
-
 const form = document.getElementById('registrationForm');
 const modal = document.getElementById('successModal');
 const closeModal = document.getElementById('closeModal');
@@ -22,4 +21,5 @@ form.addEventListener('submit', (e) => {
 
 closeModal.addEventListener('click', () => {
     modal.classList.remove('active');
+    form.reset(); // Очищаем форму
 });
