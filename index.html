@@ -65,15 +65,36 @@
             </div>
         </div>
 
-        <div id="register" class="page hidden">
-            <h1>Регистрация</h1>
-            <form>
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Зарегистрироваться</button>
-            </form>
+        <div id="register" class="page hiden">
+            <div class="main_registr">
+                <h1>Регистрация</h1>
+                <div class="registr">
+                    <form class="reristr_form" id="registrationForm">
+                        <label>
+                            Имя
+                            <input class="inp" type="text" id="username" name="username" placeholder="Введите ваше имя" required>
+                        </label>
+                        <label>
+                            Email
+                            <input class="inp" type="email" id="email" name="email" placeholder="Введите контактный email" required>
+                        </label>
+                        <label>
+                            Пароль
+                            <input class="inp" type="password" id="password" name="password" placeholder="*****" required>
+                        </label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="policy" required>
+                            <label for="policy">Я согласен(-на) с политикой обработки персональных данных</label>
+                        </div>
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal" id="successModal">
+            <h2>Вы успешно зарегистрированы!</h2>
+            <button id="closeModal">Закрыть</button>
         </div>
 
         <div id="order" class="page hidden">
