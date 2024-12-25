@@ -111,3 +111,42 @@ ul{
     background-color: #aa5f69;
 }
 
+.product-list, .new-product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    width: 254;
+    height: 281;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.cake-name {
+    color: #A64E4E;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product img {
+    width: 100%;
+    height: 134px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+p.price {
+    text-align: right;
+}
+
+.img-text {
+    padding: 14px;
+}
